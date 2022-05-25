@@ -1,0 +1,1025 @@
+Subject: Attached an observer.
+Subject: Attached an observer.
+/Users/fhirproj/Desktop/FHIR_Proj-main/Convert_fhir/text_mining/cli.py:44: DtypeWarning: Columns (5) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(csv_file, encoding='utf-8')
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 Nasal Cannul 3L/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt=  O2 nasal cannular 3l/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 Nasal Cannula        3L/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 MASK 6L/MIN使用中, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= SIMPLE  MASK 6 L/MIN, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 N/C 2L/MIN, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 2}
+---------------------------
+txt= O2 Nasal Cannula (3L), 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= change O2 mask 10L使用, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 10}
+---------------------------
+txt= O2 mask 6L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 nasal 3L/min使用, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= OXYGEN,INHALATION (PER DAY)CONT    開始日期:1010103 Oxygen Therapy-Nasal Cannula-流量: 3 Lpm, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= NASAL 2L/MIN USE, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 2}
+---------------------------
+txt= OXYGEN        nasal cannula 2L/min PRN, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 2}
+---------------------------
+txt= O2 Nasal Cannula        2L, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 2}
+---------------------------
+txt= O2 MASK 6L/MIN, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= on O2 nasal:2L/MIN, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 2}
+---------------------------
+txt= OXYGEN,INHALATION (PER DAY)CONT    開始日期:1010110 Oxygen Therapy-Nasal Cannula-流量: 3 Lpm, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= DC    O2 Nasal Cannula        2L, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 2}
+---------------------------
+txt= NC 3L/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 N/C 3L/MIN, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= o2 nasal cannula 2l/min使用, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 2}
+---------------------------
+txt= O2 Nasal Cannula        3L/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 Nasal Cannula        3L/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= Check Oximeter stat  100%(O2 NASAL 3L/MIN), 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= Check Oximeter stat  100%(O2 NASAL 3L/MIN), 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= order -nasal cannula 2L/min prn, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 2}
+---------------------------
+txt= O2 Nasal Cannula        3L/MIN, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt=  o2 nasal cannula 2l/min使用, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 2}
+---------------------------
+txt= OXYGEN,INHALATION (PER DAY)PRN     101/01/12-01/13 開始日期:1010112 Oxygen Therapy-Nasal Cannula-流量: 3 Lpm, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= Oxygen Therapy-Nasal Cannula-流量: 3 Lpm, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= ON O2 nasal cannula                                       2 l/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 2}
+---------------------------
+txt=  o2 nasal cannula 2l/min使用, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 2}
+---------------------------
+txt=  o2 nasal cannula 2l/min使用, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 2}
+---------------------------
+txt= simple mask 10L----------------------------->N/C 3l/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= .        simple mask 8 L, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 8}
+---------------------------
+txt= O2 mask 6 L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 ANALYZER(DAY)CONT    開始日期:1010118 Oxygen Therapy-Mask  10L/MIN, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 10}
+---------------------------
+txt= try  overnight Ventric-mask 35%(9L/min), 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 9}
+---------------------------
+txt= O2 MASK 6l/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt=  o2 nasal cannula 2l/min使用, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 2}
+---------------------------
+txt= Change Simple mask 6l/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 Nasal Cannula        3L/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2  NASAL  3L/MIN+潮濕瓶使用, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= OXYGEN,INHALATION (PER DAY)CONT    開始日期:1010117 Oxygen Therapy-Nasal Cannula-流量: 3 Lpm, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 MASK 6L/MIN USE, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= o2 nasal cannula 3L/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= SIMPLE  MASK 10L/MIN, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 10}
+---------------------------
+txt= NC 3L/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= OXYGEN,INHALATION (PER DAY)CONT    開始日期:1010119 Oxygen Therapy-Mask O2: 6 L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= STEAM OR NEBULIZATION INHALATION,DAYCONT    開始日期:1010119 Oxygen Therapy-Mask   O2: 6 L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 ANALYZER(DAY)CONT    開始日期:1010119 Oxygen Therapy-Mask O2: 6 L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 nasal 3L/M, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= o2 nasal cannula 3L/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 nasal cannula 3l/min 使用, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 nasal cannula 3l/min 使用, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= o2 nasal cannula 3L/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= o2 nasal cannula 3l/min使用, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= o2 nasal cannula 3L/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 MASK 8L/MIN, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 8}
+---------------------------
+txt= 改成simple mask  10l/min 使用, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 10}
+---------------------------
+txt= 改成simple mask  15l/min 使用, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 15}
+---------------------------
+txt= 改成simple mask  10l/min 使用, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 10}
+---------------------------
+txt= t-mask 10L/MIN, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 10}
+---------------------------
+txt= S-Mask 6L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 MASK 6L/MIN, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 mask change to 6LPM to keep saturation 95-99%, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt=  O2 change to nasal canula 3LPM, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= mask 6l/min use, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= nasal 3L/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= OXYGEN,INHALATION (PER DAY)CONT    開始日期:1010131 Oxygen Therapy-Nasal Cannula-流量: 3 Lpm, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= ..        Simple mask: 10 LPM, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 10}
+---------------------------
+txt= O2 mask 6L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 MASK 6L/MIN USE, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= change BiPAP to O2 nasal cannula 3L/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 MASK 6L/MIN, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 N/C 3L/MIN, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 MASK 6L/MIN, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= N/C 3L/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= change BiPAP to O2 nasal cannula 3L/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= N/C 3L/MIN, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= 更改 O2 N/C 5L/min +潮濕瓶使用, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 5}
+---------------------------
+txt= .        Mask 10L/MIN, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 10}
+---------------------------
+txt= .        Mask 35%, 10L/MIN, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 10}
+---------------------------
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 mask 6L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= High Flow mask 65L/min、FiO2 70% by RT, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 65}
+---------------------------
+txt= OXYGEN,INHALATION (PER DAY)CONT    開始日期:1010212 Oxygen Therapy-Nasal Cannula-流量: 3 Lpm, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= simple mask 10L, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 10}
+---------------------------
+txt= O2 Nasal Cannula        3L/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= Simple Mask change O2 Cannula 3L/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= Weaning Ventilator change T-Mask 3L/min use, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 3}
+---------------------------
+txt= change T-Mask 6L/min use, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 Mask (simple)        10L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 10}
+---------------------------
+txt= O2 MASK  10L/MIN, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 10}
+---------------------------
+txt= set NC 3L/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= 氧氣改為N/c: 2~3L/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 Simple Mask 8L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 8}
+---------------------------
+txt= OXYGEN,INHALATION (PER DAY)CONT    開始日期:1010210 Oxygen Therapy-Nasal Cannula-流量: 4 Lpm, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 4}
+---------------------------
+txt= .        O2 nasal 3L/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= N/C --->O2MASK 6L/MIN, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 6}
+---------------------------
+txt=  o2 nasal cannula 3l/min prn 使用, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 MASK:6L/MIN, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 Nasal Cannula        3L/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 mask 6L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 mask 10L, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 10}
+---------------------------
+txt= O2 Mask (simple)        15L/MIN, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 15}
+---------------------------
+txt= O2 Nasal Cannula        2L/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 2}
+---------------------------
+txt= O2 ventri mask 40%改為O2 N/C 3L/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 MASK 6L/MIN, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 nasal 3L/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 nasal 3L/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 MASK  6L, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= o2 nasal cannula 3L/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 use                                                    simple mask 6L/min prn if dyspnea, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= .        O2 mask 10L, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 10}
+---------------------------
+txt= OXYGEN,INHALATION (PER DAY)CONT    開始日期:1010223 Oxygen Therapy-Nasal Cannula-流量: 3Lpm, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= adjust O2 nasal cannula 3L/min --> simple mask 6L/min --> simple mask 10L/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 N/C 2-3L/MIN USE, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 N/C 2-3L/MIN USE, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= 更改O2  nasal  3→5L/min  使用, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 5}
+---------------------------
+txt= O2 Nasal Cannula        2L/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 2}
+---------------------------
+txt= on V-Mask:15L/min,FIO2:50%, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 15}
+---------------------------
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 mask 6L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= OXIMETER ST 89%(NASAL 3 L/MIN), 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= 更改SIMPO-MASK 6 L/MIN, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= OXIMETER ST 95%(SIMPO-MASK 6 L/MIN), 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= .        If SpO2 <90(under nasal 3L/min), following gas and lab data stat, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= S/M 6L/MIN  PRN, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 simple  mask  6L/min使用, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 simple  mask  6L/min使用, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= S/M 6L/min  STAT, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= N/C 3L/MIN, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= extubation →Nassal cannula 3L/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 CHANGE TO NON-REBRETHING MASK 10L/MIN, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 10}
+---------------------------
+txt= .        O2 mask 6L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 N/C 3L/min prn, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 MASK 6L/MIN+潮濕瓶, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= .        non rebreathing mask 15L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 15}
+---------------------------
+txt= 由呼吸治療師予更改O2 MASK 15L/min and FiO2:45%使用, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 15}
+---------------------------
+txt= Change Simple Mask 8L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 8}
+---------------------------
+txt= OXYGEN,INHALATION (PER DAY)CONT    開始日期:1010503 Oxygen Therapy-Mask  6L/MIN, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= OXYGEN,INHALATION (PER DAY) (開始日期:1010503 Oxyg-CONTen Therapy-Nasal Cannula-流量: 3Lpm), 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= OXYGEN,INHALATION (PER DAY) (開始日期:1010503 Oxyg-CONTen Therapy-Nasal Cannula-流量: 3Lpm), 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= OXYGEN,INHALATION (PER DAY) (開始日期:1010503 Oxyg-CONTen Therapy-Nasal Cannula-流量: 3Lpm), 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt=  O2  nasal  cannula 3l/min使用, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= Simple Mask 8L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 8}
+---------------------------
+txt= HF mask 70L/min 80%, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 70}
+---------------------------
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= change nasal cannula flow 3L, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= SIMPLE MASK 10L/MIN, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 10}
+---------------------------
+txt= NC 3l/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= 開始日期:1010306 Oxygen Therapy-Mask 8L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 8}
+---------------------------
+txt= O2  nasal  cannula 3l/min使用, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= HF mask 70L/min 90%, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 70}
+---------------------------
+txt= HF mask 70L/min 95%, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 70}
+---------------------------
+txt= O2  MASK  15L  USE, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 15}
+---------------------------
+txt= HF mask 70L/min 85%, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 70}
+---------------------------
+txt= O2  nasal  3L/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 mask 6L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 NASAL 3L/MIN, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= S/M 7L/min+潮濕瓶, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 7}
+---------------------------
+txt= O2 mask 6L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= S/M 7L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 7}
+---------------------------
+txt= S/M 6L/min+潮濕瓶, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= S/M 6L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 N/C 3l/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 MASK 6L/MIN USE, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt=   O2 mask 6L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2  nasal  cannula 3l/min使用, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2  nasal  3L/min+予潮濕瓶, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= Nasal Cannula-流量: 3 liter, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 mask 6L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 MASK 6L/MIN USE, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= n/c 3L/MIN, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= BI-PAP改MASK 10L/MIN, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 10}
+---------------------------
+txt= O2 Mask (simple)        6 L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2  nasal  cannula 3l/min使用, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 Nasal Cannula        3L/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 nasnal cannula 3L, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 mask 6L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= o2 nasal 3l/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= OXYGEN,INHALATION (PER DAY)CONT    開始日期:1010901 Oxygen Therapy-Nasal Cannula-流量: 3 Lpm, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 simple mask 6L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= Change O2 T- Mask 10L/min , FIO2 : 40%, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 10}
+---------------------------
+txt= O2 mask 6L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 Nasal Cannula        3L/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2  nasal  cannula 3l/min使用, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= N/C 3L/min使用, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 Nasal Cannula        3l/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= on Simple Mask 6L, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 mask 6L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 N/C 3L/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= ..        none rebreathing mask 15L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 15}
+---------------------------
+txt= O2 NASAL  CANNULA 3L/MIN 使用, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= T-mask 6l/min+ohio use, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 NASAL 3L/MIN, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2  nasal  cannula 3l/min使用, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 Mask (simple)  3 L / min prn, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 3}
+---------------------------
+txt= Change O2 T- Mask 10L/min , FIO2 : 40%, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 10}
+---------------------------
+txt= T-mask 6l/min+ohio use, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 Nasal Cannula        3L/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= on O2 nasal 3L/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt=  O2 SIMPLE  MASK  6L/MIN, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= OXYGEN,INHALATION (PER DAY)CONT    開始日期:1010312 Oxygen Therapy-Nasal Cannula-流量: 3 Lpm, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 nasal 3L/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 mask 6L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 MASK 6L/MIN, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2  nasal  cannula 3l/min使用, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 Nasal Cannula        3 L/MIN, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 MASK 10L→15L, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 10}
+---------------------------
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 mask 6L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= on Simple Mask 6L, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 mask 6L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= N/C 3L/MIN, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2  nasal  cannula 3l/min使用, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= OXYGEN,INHALATION (PER DAY)CONT    開始日期:1010511 Oxygen Therapy-O2 Mask 10 L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 10}
+---------------------------
+txt= O2 NASAL 3 L/MIN, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= 改  nasal 3L/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 MASK 6L/MIN, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 simple mask 6L/MIN使用, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 simple mask ↓8 l/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 8}
+---------------------------
+txt= 呼吸治療師給予病患N/C 3L/MIN, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= Change Simple-mask 6L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 Nasal Cannula 3L/MIN, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 simple mask 10 l/min下oximeter為96%, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 10}
+---------------------------
+txt= O2 simple mask ↓6 l/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 mask 6L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= OXYGEN,INHALATION (PER DAY)CONT    Oxygen Therapy-O2 Mask 10 L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 10}
+---------------------------
+txt= OXYGEN,INHALATION (PER DAY)CONT    開始日期:1010710 Oxygen Therapy-Nasal Cannula-流量: 3_ Lpm, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 nasal 5l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 5}
+---------------------------
+txt= O2 nasal 5l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 5}
+---------------------------
+txt= order nasal cannula 3L/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 Mask  6L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= extubation→nassal cannula 3L/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= MASK 10L/MIN->N/C 3L/MIN, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 N/C 3l/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 N/C 3l/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 MASK 6L/MIN USE, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt=  O2 T- Mask 10L/min , FIO2 : 40%, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 10}
+---------------------------
+txt= O2  nasal  cannula 3l/min使用, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 ANALYZER(DAY)CONT   Oxygen Therapy-O2 Mask 6 L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 nasal 5l/min+ohio use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 5}
+---------------------------
+txt= O2 nasal 5l/min+ohio use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 5}
+---------------------------
+txt= simple mask 10L/min+潮濕瓶, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 10}
+---------------------------
+txt= O2 MASK 6 L/MIN, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= ..        O2 with simple mask 6LPM use, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2  nasal  cannula 3l/min使用, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= 改Simple Mask 6L/Min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= On Nasal Cannula 3L/Min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= extubation→nassal cannula 3L/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= N/C   3L/MIN, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= 氧氣n/c 3l/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 MASK 8L/MIN, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 8}
+---------------------------
+txt= 調整O2 nasal 3L/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= on Simple Mask 6L, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= N/C 3l/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2  N/C  2L/MIN, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 2}
+---------------------------
+txt= O2 N/C 3L/MIN, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= 氧氣mask 6 l/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 nasal 3l/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= 氧氣mask 12  l/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 12}
+---------------------------
+txt= simple mask O2 6 L/MIN, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt=  Nasal O2 3L/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= Pulse oximeter(次)-使用N.c  5L/min  呈現90%偏低改simple mask:10L/min   Pulse oximeter(次)-使用後  呈現'93%, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 10}
+---------------------------
+txt= O2 Mask 6L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 Nasal Cannula 3L/MIN, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= change on HF mask 65L/min，FiO2:80%, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 65}
+---------------------------
+txt= on Simple Mask 6L, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 nasal 5l/min+ohio use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 5}
+---------------------------
+txt= O2 nasal 3l/min*8hr, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 NASAL  CANNULA  3L/MIN PRN USE, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= O2 mask 6L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= OXYGEN,INHALATION (PER DAY)CONT    開始日期:1011111 Oxygen Therapy-Nasal Cannula-流量: _3 Lpm, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= change O2 mask 8L/min使用, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 8}
+---------------------------
+txt= O2 nasal 5l/min+ohio use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 5}
+---------------------------
+txt= O2 cannula 3L/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= try simple mask +Ohio 6L/min at daytime and cehck Spo2 on 5/17 9:00, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 mask 6L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= 調整O2 mask 10L/min使用, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 10}
+---------------------------
+txt= OXYGEN,INHALATION (PER DAY)CONT    開始日期:1011111 Oxygen Therapy-Nasal Cannula-流量: _3 Lpm, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= change O2 mask 8L/min使用 by RT, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 8}
+---------------------------
+txt= O2 nasal 5l/min+ohio use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 5}
+---------------------------
+txt= CHANGE O2 N/C 3L/MIN, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= change HF mask 75L/min 70%, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 75}
+---------------------------
+txt= O2 mask 6L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 NASAL 3L使用, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= ON O2 MASK 6L/MIN, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= simple mask 3L/MIN+ 潮濕瓶, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 3}
+---------------------------
+txt= .        O2 mask 6L/min 加潮濕瓶, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 mask 6l/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 mask 6l/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= 調整O2 mask +6L/min使用, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= change HF mask 65L/min 60%, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 65}
+---------------------------
+txt= O2 Mask (simple)        6 L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= O2 nasal 5l/min+ohio use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 5}
+---------------------------
+txt= room air → nasal O2 3L/min use, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 3}
+---------------------------
+txt= .        O2 mask 8L, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 8}
+---------------------------
+txt= O2 mask 6L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+txt= o2 mask 8L/min, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 8}
+---------------------------
+txt= .        nasal cannula 5L/min, 
+result= {'mask_name': 'Nasal Cannula', 'mask_type': 'FiO2', 'value': 5}
+---------------------------
+txt= O2 ANALYZER(DAY)CONT    開始日期:1010716 Oxygen Therapy-Mask  FiO2:6L/MIN, 
+result= {'mask_name': 'Simple Mask', 'mask_type': 'flow rate', 'value': 6}
+---------------------------
+Traceback (most recent call last):
+  File "/Users/fhirproj/Desktop/FHIR_Proj-main/Convert_fhir/text_mining/cli.py", line 45, in <module>
+    for row in df.iterrows():
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/pandas/core/frame.py", line 1324, in iterrows
+    s = klass(v, index=columns, name=k)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/pandas/core/series.py", line 459, in __init__
+    NDFrame.__init__(self, data)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/pandas/core/generic.py", line 255, in __init__
+    object.__setattr__(self, "_flags", Flags(self, allows_duplicate_labels=True))
+KeyboardInterrupt
