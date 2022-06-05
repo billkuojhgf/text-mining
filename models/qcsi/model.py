@@ -1,4 +1,7 @@
 import mask
+from typing import Dict
+from mask import unit_type
+from mask import mask_type
 
 
 def predict(patient_data_dict) -> int:
@@ -23,6 +26,8 @@ def predict(patient_data_dict) -> int:
             mask.mask_mart.treatment_mining(flow_rate_value)
         if treatment_mining_result is not None:
             # TODO: Convert FiO2 to Flow rate
+            if treatment_mining_result['mask_type'] != unit_type[0]:
+                patient_data_dict["o2_flow_rate"]["value"] = unit_conversion(treatment_mining_result)
             patient_data_dict["o2_flow_rate"]['value'] = treatment_mining_result['value']
         else:
             raise ValueError("The O2 flow rate string: \"{}\" cannot be identified \
@@ -57,27 +62,19 @@ def qcsi_model_result(patient_data_dict) -> int:
     return result
 
 
-# def convert_qcsi_value(patient_data_dict):
-#     for key in patient_data_dict:
-#         try:
-#             patient_data_dict[key]['value'] = {
-#                 'respiratory_rate':
-#                     0 if patient_data_dict[key]['value'] <= 22
-#                     else 2 if patient_data_dict[key]['value'] >= 28
-#                     else 1,
-#                 'spo2':
-#                     5 if patient_data_dict[key]['value'] <= 88
-#                     else 0 if patient_data_dict[key]['value'] > 92
-#                     else 2,
-#                 'o2_flow_rate':
-#                     0 if patient_data_dict[key]['value'] <= 2
-#                     else 5 if patient_data_dict[key]['value'] >= 5
-#                     else 4
-#             }.get(key)
-#         # Handle the exception to the not exist keys.
-#         except TypeError:
-#             continue
-#     return patient_data_dict
+def unit_conversion(treatment_mining_result: Dict) -> int or float:
+    converted_value = 0
+    fio2_value = treatment_mining_result['value']
+    # TODO: 補齊轉換的單位數值
+    if treatment_mining_result['mask_name'] == mask_type[0]:
+        pass
+    elif treatment_mining_result['mask_name'] == mask_type[1]:
+        pass
+    elif treatment_mining_result['mask_name'] == mask_type[2]:
+        pass
+    else:
+        raise KeyError("Mask Name Undefined, check mask.mask_type sets for more info.")
+    return converted_value
 
 
 if __name__ == '__main__':

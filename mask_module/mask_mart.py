@@ -76,7 +76,7 @@ class ConcreteMaskMart(MaskMart):
             if observer_response:
                 return {
                     "mask_name": observer.name,
-                    "mask_type": observer_response["type"],
+                    "unit_type": observer_response["type"],
                     "value": observer_response["value"]
                 }
 
