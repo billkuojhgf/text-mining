@@ -2,6 +2,7 @@ import os
 
 from mask import mask
 from flask_main_cli import app
+from flask_main_cli import import_model
 
 
 def init_models():
@@ -26,14 +27,13 @@ def init_models():
             names.append(model_path_dir)
 
     models_init_file = open("./models/__init__.py", "w")
-    models_init_file.write("__all__ = {}\n".format(names)
-                           + "__version__ = '1.0'\n"
-                           + "__author__ = 'Ming Kuo'")
+    models_init_file.write("__all__ = {}\n".format(names))
     models_init_file.close()
 
 
 if __name__ == '__main__':
     mask()
     init_models()
+    # import_model()
     app.debug = True
     app.run()

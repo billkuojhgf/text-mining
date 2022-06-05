@@ -6,10 +6,10 @@ from base.exceptions import FeatureCodeIsEmpty
 
 class FeatureTable:
     def __init__(self, feature_table_position):
-        self.table = self.__create_table(feature_table_position)
+        self.table = self._create_table(feature_table_position)
 
     @classmethod
-    def __create_table(cls, feature_table_position):
+    def _create_table(cls, feature_table_position):
         table = {}
         special_field_sets = ('model', "feature", "code", "code_system", "data_alive_time")
         with open(feature_table_position, newline='') as feature_table_file:
@@ -26,10 +26,11 @@ class FeatureTable:
                 code = row['code']
                 if row['code_system'] != '':
                     code = "{}|{}".format(row['code_system'], row['code'])
+
                 # 如果code 變數內沒內容
-                if code == '':
-                    if not row["type_of_data"] == "patient":
-                        raise FeatureCodeIsEmpty(row['feature'])
+                if code == '' and row["type_of_data"] != "patient":
+                    raise FeatureCodeIsEmpty(row['feature'])
+
                 # Feature 有兩種以上的code
                 if 'code' in table[row['model']][row['feature']]:
                     table[row['model']][row['feature']]['code'] = table[row['model']][row['feature']]['code'] \
@@ -47,6 +48,9 @@ class FeatureTable:
             return table
 
     def get_model_feature_dict(self, model_name):
+        if model_name not in self.table:
+            raise KeyError("Model is not exist in the feature table.")
+
         return self.table[model_name]
 
 

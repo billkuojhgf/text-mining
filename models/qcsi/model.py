@@ -17,36 +17,27 @@ def predict(patient_data_dict) -> int:
 
     """
 
-    flow_rate_value = patient_data_dict["o2 flow rate"]['value']
+    flow_rate_value = patient_data_dict["o2_flow_rate"]['value']
     if type(flow_rate_value) == str:
         treatment_mining_result = \
             mask.mask_mart.treatment_mining(flow_rate_value)
         if treatment_mining_result is not None:
-            patient_data_dict["o2 flow rate"]['value'] = treatment_mining_result['value']
+            # TODO: Convert FiO2 to Flow rate
+            patient_data_dict["o2_flow_rate"]['value'] = treatment_mining_result['value']
         else:
             raise ValueError("The O2 flow rate string: \"{}\" cannot be identified \
-            , please fill in the flow rate value manually"
+            , please fill in the flow rate manually"
                              .format(flow_rate_value))
     # Convert the value into qCSI score format and calculate the score.
-    return qcsi_model_result(convert_qcsi_value(patient_data_dict))
+    return qcsi_model_result(patient_data_dict)
 
 
 def qcsi_model_result(patient_data_dict) -> int:
     result = 0
     for key in patient_data_dict:
         try:
-            result += int(patient_data_dict[key]['value'])
-        except TypeError:
-            continue
-    # type(result) === int
-    return result
-
-
-def convert_qcsi_value(patient_data_dict):
-    for key in patient_data_dict:
-        try:
-            patient_data_dict[key]['value'] = {
-                'respiratory rate':
+            result += {
+                'respiratory_rate':
                     0 if patient_data_dict[key]['value'] <= 22
                     else 2 if patient_data_dict[key]['value'] >= 28
                     else 1,
@@ -54,25 +45,49 @@ def convert_qcsi_value(patient_data_dict):
                     5 if patient_data_dict[key]['value'] <= 88
                     else 0 if patient_data_dict[key]['value'] > 92
                     else 2,
-                'o2 flow rate':
+                'o2_flow_rate':
                     0 if patient_data_dict[key]['value'] <= 2
                     else 5 if patient_data_dict[key]['value'] >= 5
                     else 4
             }.get(key)
         # Handle the exception to the not exist keys.
         except TypeError:
+            print("key '{}' is not using".format(key))
             continue
-    return patient_data_dict
+    return result
+
+
+# def convert_qcsi_value(patient_data_dict):
+#     for key in patient_data_dict:
+#         try:
+#             patient_data_dict[key]['value'] = {
+#                 'respiratory_rate':
+#                     0 if patient_data_dict[key]['value'] <= 22
+#                     else 2 if patient_data_dict[key]['value'] >= 28
+#                     else 1,
+#                 'spo2':
+#                     5 if patient_data_dict[key]['value'] <= 88
+#                     else 0 if patient_data_dict[key]['value'] > 92
+#                     else 2,
+#                 'o2_flow_rate':
+#                     0 if patient_data_dict[key]['value'] <= 2
+#                     else 5 if patient_data_dict[key]['value'] >= 5
+#                     else 4
+#             }.get(key)
+#         # Handle the exception to the not exist keys.
+#         except TypeError:
+#             continue
+#     return patient_data_dict
 
 
 if __name__ == '__main__':
     mask.mask()
     patient_data = {
-        "respiratory rate": {
+        "respiratory_rate": {
             "date": "2022-01-19T11:53",
             "value": 25
         },
-        "o2 flow rate": {
+        "o2_flow_rate": {
             "date": "2022-01-19T11:53",
             "value": "O2 nasal 3l/min use"
         },

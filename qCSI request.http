@@ -3,11 +3,11 @@ POST http://localhost:5000/qcsi/change
 Content-Type: application/json
 
 {
-  "respiratory rate": {
+  "respiratory_rate": {
     "date": "2022-01-19T11:53",
     "value": 25
   },
-  "o2 flow rate": {
+  "o2_flow_rate": {
     "date": "2022-01-19T11:53",
     "value": 3
   },
@@ -23,13 +23,13 @@ POST http://localhost:5000/qcsi/change
 Content-Type: application/json
 
 {
-  "respiratory rate": {
+  "respiratory_rate": {
     "date": "2022-01-19T11:53",
     "value": 25
   },
-  "o2 flow rate": {
+  "o2_flow_rate": {
     "date": "2022-01-19T11:53",
-    "value": "O2 nasal l/min use"
+    "value": "O2 nasal 3l/min use"
   },
   "fio2": "",
   "spo2": {
@@ -37,3 +37,6 @@ Content-Type: application/json
     "value": 90
   }
 }
+
+### Request GET qcsi api with patient's id
+GET http://localhost:5000/qcsi?id=test-03121002

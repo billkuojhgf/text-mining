@@ -112,7 +112,7 @@ def get_age(patient_id, default_time):
 
 
 def get_resource_value(dictionary):
-    # For value that are not a json format, maybe is just numeric type
+    # For value that are not a json format, maybe it is just numeric type object
     if type(dictionary) is not dict:
         return dictionary
 
