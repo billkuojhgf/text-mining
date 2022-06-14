@@ -34,6 +34,5 @@ def init_models():
 if __name__ == '__main__':
     mask()
     init_models()
-    # import_model()
     app.debug = True
     app.run()

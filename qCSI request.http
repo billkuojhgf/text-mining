@@ -29,7 +29,7 @@ Content-Type: application/json
   },
   "o2_flow_rate": {
     "date": "2022-01-19T11:53",
-    "value": "O2 nasal 3l/min use"
+    "value": "oxygen therapy-nonrebreathing mask 100%"
   },
   "fio2": "",
   "spo2": {

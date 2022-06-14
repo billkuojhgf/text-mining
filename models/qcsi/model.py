@@ -26,9 +26,10 @@ def predict(patient_data_dict) -> int:
             mask.mask_mart.treatment_mining(flow_rate_value)
         if treatment_mining_result is not None:
             # TODO: Convert FiO2 to Flow rate
-            if treatment_mining_result['mask_type'] != unit_type[0]:
+            if treatment_mining_result['unit_type'] != unit_type[0]:
                 patient_data_dict["o2_flow_rate"]["value"] = unit_conversion(treatment_mining_result)
-            patient_data_dict["o2_flow_rate"]['value'] = treatment_mining_result['value']
+            else:
+                patient_data_dict["o2_flow_rate"]['value'] = treatment_mining_result['value']
         else:
             raise ValueError("The O2 flow rate string: \"{}\" cannot be identified \
             , please fill in the flow rate manually"
@@ -57,24 +58,31 @@ def qcsi_model_result(patient_data_dict) -> int:
             }.get(key)
         # Handle the exception to the not exist keys.
         except TypeError:
-            print("key '{}' is not using".format(key))
+            print("key '{}' is not using, continue anyway.".format(key))
             continue
     return result
 
 
 def unit_conversion(treatment_mining_result: Dict) -> int or float:
+    """
+    treatment_mining_result: Dict, {'mask_name': , 'mask_type', 'value'}
+    unit_type = ("o2_flow_rate", "fio2")
+    mask_type = ("Simple Mask", "Nasal Cannula", "Non-rebreathing Mask", "Tracheal Mask", "V-Mask", "High Flow Mask")
+    """
     converted_value = 0
-    fio2_value = treatment_mining_result['value']
+    fio2_value = int(treatment_mining_result['value'])
     # TODO: 補齊轉換的單位數值
     if treatment_mining_result['mask_name'] == mask_type[0]:
-        pass
+        converted_value = (fio2_value - 5) / 5
     elif treatment_mining_result['mask_name'] == mask_type[1]:
-        pass
+        converted_value = (fio2_value - 20) / 4
     elif treatment_mining_result['mask_name'] == mask_type[2]:
-        pass
+        converted_value = 15
+    elif treatment_mining_result['mask_name'] == mask_type[3]:
+        converted_value = (fio2_value - 21) / 3
     else:
         raise KeyError("Mask Name Undefined, check mask.mask_type sets for more info.")
-    return converted_value
+    return round(converted_value)
 
 
 if __name__ == '__main__':
