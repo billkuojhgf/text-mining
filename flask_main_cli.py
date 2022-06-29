@@ -74,7 +74,7 @@ def api_with_id(api):
 
 
 def verify_data(patient_data_dict, api):
-    # MUST HAVE: 1. Keys with each feature. 2. Value with Dict type and has Key with "value".
+    # MUST HAVE: 1. Keys with each feature. 2. Value with Dict type and has Key with the name "value".
     try:
         validation_table = table.get_model_feature_dict(api)
     except KeyError:
@@ -106,8 +106,6 @@ def api_with_post(api):
         }
     """
     patient_data_dict = request.get_json()
-    # TODO: A function to verify data whether is in right format.
-    # MUST HAVE: 1. Keys with each features. 2. Value with Dict type and has Key with "value"
     verify_data(patient_data_dict, api)
     print(patient_data_dict)
     patient_data_dict["predict_value"] = return_model_result(patient_data_dict, api)
