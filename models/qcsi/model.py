@@ -17,7 +17,6 @@ def predict(patient_data_dict) -> int:
 
     The goal of this function is to calculate the qCSI value with patient data that was given in patient_data_dict,
     and return the qCSI score.
-
     """
 
     flow_rate_value = patient_data_dict["o2_flow_rate"]['value']

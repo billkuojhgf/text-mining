@@ -1,0 +1,139 @@
+txt= oxygen therapy -tracheal o2 3 l,
+result= {'mask_name': 'Tracheal Mask', 'unit_type': 'o2_flow_rate', 'value': 3}
+---------------------------
+txt= oxygen therapy -tracheal o2 3 l/min, 
+result= {'mask_name': 'Tracheal Mask', 'unit_type': 'o2_flow_rate', 'value': 3}
+---------------------------
+txt= oxygen therapy -tracheal o2 35% 10l, 
+result= {'mask_name': 'Tracheal Mask', 'unit_type': 'o2_flow_rate', 'value': 10}
+---------------------------
+txt= oxygen therapy -tracheal o2 5l, 
+result= {'mask_name': 'Tracheal Mask', 'unit_type': 'o2_flow_rate', 'value': 5}
+---------------------------
+txt= oxygen therapy-mask 6l/min, 
+result= {'mask_name': 'Simple Mask', 'unit_type': 'o2_flow_rate', 'value': 6}
+---------------------------
+txt= oxygen therapy-nasal cannula 2 l/m, 
+result= {'mask_name': 'Nasal Cannula', 'unit_type': 'o2_flow_rate', 'value': 2}
+---------------------------
+txt= oxygen therapy-nasal cannula 2l/m, 
+result= {'mask_name': 'Nasal Cannula', 'unit_type': 'o2_flow_rate', 'value': 2}
+---------------------------
+txt= oxygen therapy-nasal cannula 2l/min, 
+result= {'mask_name': 'Nasal Cannula', 'unit_type': 'o2_flow_rate', 'value': 2}
+---------------------------
+txt= oxygen therapy-nasal cannula 3  l/m, 
+result= {'mask_name': 'Nasal Cannula', 'unit_type': 'o2_flow_rate', 'value': 3}
+---------------------------
+txt= oxygen therapy-nasal cannula 3 l/m, 
+result= {'mask_name': 'Nasal Cannula', 'unit_type': 'o2_flow_rate', 'value': 3}
+---------------------------
+txt= oxygen therapy-nasal cannula 3 l/m  prn is sob, 
+result= {'mask_name': 'Nasal Cannula', 'unit_type': 'o2_flow_rate', 'value': 3}
+---------------------------
+txt= oxygen therapy-nasal cannula 3 l/m (∏…), 
+result= {'mask_name': 'Nasal Cannula', 'unit_type': 'o2_flow_rate', 'value': 3}
+---------------------------
+txt= oxygen therapy-nasal cannula 3 l/m prn, 
+result= {'mask_name': 'Nasal Cannula', 'unit_type': 'o2_flow_rate', 'value': 3}
+---------------------------
+txt= oxygen therapy-nasal cannula 3 l/m prn for seizure attack, 
+result= {'mask_name': 'Nasal Cannula', 'unit_type': 'o2_flow_rate', 'value': 3}
+---------------------------
+txt= oxygen therapy-nasal cannula 3 l/m prn if sob, 
+result= {'mask_name': 'Nasal Cannula', 'unit_type': 'o2_flow_rate', 'value': 3}
+---------------------------
+txt= oxygen therapy-nasal cannula 3 l/m--∏…, 
+result= {'mask_name': 'Nasal Cannula', 'unit_type': 'o2_flow_rate', 'value': 3}
+---------------------------
+txt= oxygen therapy-nasal cannula 3l/m, 
+result= {'mask_name': 'Nasal Cannula', 'unit_type': 'o2_flow_rate', 'value': 3}
+---------------------------
+txt= oxygen therapy-nasal cannula 3l/min, 
+result= {'mask_name': 'Nasal Cannula', 'unit_type': 'o2_flow_rate', 'value': 3}
+---------------------------
+txt= oxygen therapy-nasal cannula 3lpm, 
+result= {'mask_name': 'Nasal Cannula', 'unit_type': 'o2_flow_rate', 'value': 3}
+---------------------------
+txt= oxygen therapy-nasal cannula 4 l/m, 
+result= {'mask_name': 'Nasal Cannula', 'unit_type': 'o2_flow_rate', 'value': 4}
+---------------------------
+txt= oxygen therapy-nasal cannula 4l/min, 
+result= {'mask_name': 'Nasal Cannula', 'unit_type': 'o2_flow_rate', 'value': 4}
+---------------------------
+txt= oxygen therapy-nasal cannula 5 l/m, 
+result= {'mask_name': 'Nasal Cannula', 'unit_type': 'o2_flow_rate', 'value': 5}
+---------------------------
+txt= oxygen therapy-nasal cannula 5 l/m + humid bottle, 
+result= {'mask_name': 'Nasal Cannula', 'unit_type': 'o2_flow_rate', 'value': 5}
+---------------------------
+txt= oxygen therapy-nasal cannula 5 l/m + humidifier, 
+result= {'mask_name': 'Nasal Cannula', 'unit_type': 'o2_flow_rate', 'value': 5}
+---------------------------
+txt= oxygen therapy-nasal cannula o2 3l/min prn, 
+result= {'mask_name': 'Nasal Cannula', 'unit_type': 'o2_flow_rate', 'value': 3}
+---------------------------
+txt= oxygen therapy-nonrebreathing mask 100 %, 
+result= {'mask_name': 'Non-rebreathing Mask', 'unit_type': 'fio2', 'value': 100}
+---------------------------
+txt= oxygen therapy-nonrebreathing mask 100%, 
+result= {'mask_name': 'Non-rebreathing Mask', 'unit_type': 'fio2', 'value': 100}
+---------------------------
+txt= oxygen therapy-simple mask 10 l/m, 
+result= {'mask_name': 'Simple Mask', 'unit_type': 'o2_flow_rate', 'value': 10}
+---------------------------
+txt= oxygen therapy-simple mask 10 l/m (t-mask), 
+result= {'mask_name': 'Simple Mask', 'unit_type': 'o2_flow_rate', 'value': 10}
+---------------------------
+txt= oxygen therapy-simple mask 10l/min ∏…, 
+result= {'mask_name': 'Simple Mask', 'unit_type': 'o2_flow_rate', 'value': 10}
+---------------------------
+txt= oxygen therapy-simple mask 3 l/m--t mask, 
+result= {'mask_name': 'Simple Mask', 'unit_type': 'o2_flow_rate', 'value': 3}
+---------------------------
+txt= oxygen therapy-simple mask 6 l/m, 
+result= {'mask_name': 'Simple Mask', 'unit_type': 'o2_flow_rate', 'value': 6}
+---------------------------
+txt= oxygen therapy-simple mask 6 l/min, 
+result= {'mask_name': 'Simple Mask', 'unit_type': 'o2_flow_rate', 'value': 6}
+---------------------------
+txt= oxygen therapy-simple mask 6l/min, 
+result= {'mask_name': 'Simple Mask', 'unit_type': 'o2_flow_rate', 'value': 6}
+---------------------------
+txt= oxygen therapy-simple mask 6l/min with ºÈ¿„≤~®œ•Œ, 
+result= {'mask_name': 'Simple Mask', 'unit_type': 'o2_flow_rate', 'value': 6}
+---------------------------
+txt= oxygen therapy-simple mask 8 l/m, 
+result= {'mask_name': 'Simple Mask', 'unit_type': 'o2_flow_rate', 'value': 8}
+---------------------------
+txt= oxygen therapy-simple mask 8l/min, 
+result= {'mask_name': 'Simple Mask', 'unit_type': 'o2_flow_rate', 'value': 8}
+---------------------------
+txt= oxygen therapy-tracheal mask 35%, 
+result= {'mask_name': 'Tracheal Mask', 'unit_type': 'fio2', 'value': 35}
+---------------------------
+txt= oxygen therapy-tracheal mask 35% 10l, 
+result= {'mask_name': 'Tracheal Mask', 'unit_type': 'o2_flow_rate', 'value': 10}
+---------------------------
+txt= oxygen therapy-tracheal mask 35% prn if sob, 
+result= {'mask_name': 'Tracheal Mask', 'unit_type': 'fio2', 'value': 35}
+---------------------------
+txt= oxygen therapy-tracheal mask 35% •[ºÈ¿„≤~, 
+result= {'mask_name': 'Tracheal Mask', 'unit_type': 'fio2', 'value': 35}
+---------------------------
+txt= oxygen therapy-tracheal mask 3l/min, 
+result= {'mask_name': 'Tracheal Mask', 'unit_type': 'o2_flow_rate', 'value': 3}
+---------------------------
+txt= oxygen therapy-tracheal mask 50%, 
+result= {'mask_name': 'Tracheal Mask', 'unit_type': 'fio2', 'value': 50}
+---------------------------
+txt= oxygen therapy-tracheal mask 6 l, 
+result= {'mask_name': 'Tracheal Mask', 'unit_type': 'o2_flow_rate', 'value': 6}
+---------------------------
+txt= oxygen therapy-tracheal mask 6l/m, 
+result= {'mask_name': 'Tracheal Mask', 'unit_type': 'o2_flow_rate', 'value': 6}
+---------------------------
+txt= oxygen therapy-tracheal mask 6l/min, 
+result= {'mask_name': 'Tracheal Mask', 'unit_type': 'o2_flow_rate', 'value': 6}
+---------------------------
+Done
